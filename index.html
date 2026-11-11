@@ -16,7 +16,7 @@ html{scroll-behavior:smooth}
 body{font-family:'Cairo',sans-serif;background:var(--ink);color:var(--cream);line-height:1.8;overflow-x:hidden}
 .gold{background:linear-gradient(100deg,#b98a3c,#fff0c4 40%,#e0b562 60%,#fff0c4 80%,#b98a3c);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 6s linear infinite}
 @keyframes shine{to{background-position:-220% 0}}
-
+ 
 /* living background */
 .bg{position:fixed;inset:0;z-index:-1;background:var(--ink);overflow:hidden}
 .bg::before,.bg::after{content:"";position:absolute;width:140vmax;height:140vmax;border-radius:50%;filter:blur(90px);opacity:.55;animation:drift 22s ease-in-out infinite alternate}
@@ -28,7 +28,7 @@ body{font-family:'Cairo',sans-serif;background:var(--ink);color:var(--cream);lin
 @keyframes tw{0%,100%{opacity:.1}50%{opacity:.9}}
 .fh{position:fixed;pointer-events:none;z-index:90;font-size:20px;animation:fly 1.4s ease-out forwards}
 @keyframes fly{to{transform:translate(var(--x,0),-140px) scale(1.4) rotate(var(--r,20deg));opacity:0}}
-
+ 
 /* intro */
 #intro{position:fixed;inset:0;z-index:50;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:36px;background:radial-gradient(ellipse at 50% 40%,rgba(12,2,6,.2),var(--ink) 80%);transition:opacity 1s}
 #intro.out{opacity:0;pointer-events:none}
@@ -48,7 +48,7 @@ body{font-family:'Cairo',sans-serif;background:var(--ink);color:var(--cream);lin
 .env.open .lt{transform:translateY(-62%)}
 .hint{font-size:13px;color:var(--gold);animation:pl 2s infinite}
 @keyframes pl{50%{opacity:.4}}
-
+ 
 /* main */
 #main{display:none;opacity:0;transition:opacity 1.2s}
 #main.show{opacity:1}
@@ -73,7 +73,7 @@ section{width:100%;max-width:480px;margin:0 auto;padding:0 20px}
 .since{font-size:12px;opacity:.7;margin-top:12px}
 .down{margin-top:22px;color:var(--gold);font-size:20px;animation:bob 1.6s ease-in-out infinite}
 @keyframes bob{50%{transform:translateY(8px)}}
-
+ 
 /* vinyl */
 .vinyl{display:flex;flex-direction:column;align-items:center;gap:20px;padding-block:56px}
 .rec{position:relative;width:230px;height:230px;border-radius:50%;box-shadow:0 26px 60px rgba(0,0,0,.7),0 0 0 6px #1a0a10,0 0 50px rgba(255,92,124,.25);
@@ -81,14 +81,14 @@ section{width:100%;max-width:480px;margin:0 auto;padding:0 20px}
 .playing .rec{animation-play-state:running}
 @keyframes spin{to{transform:rotate(360deg)}}
 .rec::before{content:"";position:absolute;inset:32%;border-radius:50%;background:radial-gradient(circle,#2a0912 0 9%,transparent 10%),linear-gradient(135deg,var(--gold),var(--rose))}
-.rec::after{content:"♥";position:absolute;inset:0;display:grid;place-items:center;font-size:0;color:var(--wine)}
+.rec::after{content:"♥️";position:absolute;inset:0;display:grid;place-items:center;font-size:0;color:var(--wine)}
 .vt{font:700 24px 'Aref Ruqaa';text-align:center}
 .vt small{display:block;font:400 12px 'Cairo';color:var(--gold);direction:ltr}
 .ctl{display:flex;align-items:center;gap:14px;width:100%}
 .pb{flex:none;width:54px;height:54px;border:0;border-radius:50%;cursor:pointer;font-size:17px;color:#2a0710;background:linear-gradient(135deg,var(--gold),var(--rose));box-shadow:0 0 28px rgba(255,92,124,.45)}
 .pb:focus-visible,.again:focus-visible{outline:2px solid var(--cream);outline-offset:3px}
 input[type=range]{flex:1;height:4px;accent-color:var(--gold);direction:ltr;cursor:pointer}
-
+ 
 /* letter */
 .quote{position:relative;margin:30px 0 40px;padding:44px 24px 38px;text-align:center;color:var(--wine);background:var(--cream);border-radius:4px;transform:rotate(-1.2deg);box-shadow:0 24px 60px rgba(0,0,0,.6)}
 .quote::before{content:"❝";position:absolute;top:-22px;right:50%;margin-right:-24px;width:48px;height:48px;line-height:56px;border-radius:50%;font-size:24px;background:var(--rose);color:var(--cream);box-shadow:0 6px 18px rgba(255,92,124,.5)}
@@ -100,7 +100,7 @@ input[type=range]{flex:1;height:4px;accent-color:var(--gold);direction:ltr;curso
 .ltr p{font-size:16px;line-height:2.1;margin-bottom:22px;opacity:0;transform:translateY(22px);transition:opacity .9s,transform .9s}
 .ltr p.in{opacity:1;transform:none}
 .ltr p:last-child{font-weight:600;color:var(--gold)}
-
+ 
 /* gallery */
 .gal-h{text-align:center;padding-top:60px}
 .gal-h h3{font:italic 700 34px 'Playfair Display';margin-bottom:4px}
@@ -113,17 +113,17 @@ input[type=range]{flex:1;height:4px;accent-color:var(--gold);direction:ltr;curso
 .pol::before{content:"";position:absolute;top:-12px;left:50%;width:76px;height:24px;margin-left:-38px;background:rgba(240,208,143,.6);transform:rotate(-4deg)}
 .pol img{width:100%;aspect-ratio:1;object-fit:cover;display:block;background:#d9c9a8}
 .pol span{display:block;margin-top:12px;text-align:center;font:700 18px 'Aref Ruqaa'}
-
+ 
 /* timeline */
 .tl{position:relative;padding:50px 0 20px 0}
 .tl h3{font:italic 700 34px 'Playfair Display';text-align:center;margin-bottom:28px}
 .ev{position:relative;margin:0 34px 18px 0;padding:16px 18px;border-radius:20px;background:rgba(42,9,18,.7);border:1px solid var(--line);backdrop-filter:blur(8px)}
-.ev::before{content:"♥";position:absolute;right:-34px;top:18px;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-size:11px;color:#2a0710;background:var(--gold);box-shadow:0 0 0 5px var(--ink),0 0 18px var(--gold)}
+.ev::before{content:"♥️";position:absolute;right:-34px;top:18px;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-size:11px;color:#2a0710;background:var(--gold);box-shadow:0 0 0 5px var(--ink),0 0 18px var(--gold)}
 .ev.r::before{background:var(--rose);box-shadow:0 0 0 5px var(--ink),0 0 18px var(--rose)}
 .ev:not(:last-child)::after{content:"";position:absolute;right:-24px;top:42px;height:calc(100% + 6px);width:2px;background:linear-gradient(var(--gold),var(--rose));opacity:.5}
 .ev h4{font:700 20px 'Aref Ruqaa'}
 .ev p{font-size:13px;color:var(--gold);opacity:.9}
-
+ 
 .end{text-align:center;padding:60px 20px calc(70px + var(--sb))}
 .bigheart{font-size:54px;color:var(--rose);display:inline-block;animation:beat 1.4s infinite;filter:drop-shadow(0 0 18px var(--rose))}
 .end h2{font:italic 700 36px 'Playfair Display';margin:6px 0 22px}
@@ -137,7 +137,7 @@ input[type=range]{flex:1;height:4px;accent-color:var(--gold);direction:ltr;curso
 <div class="bg"></div><div id="sky" aria-hidden="true"></div>
 <audio id="au" loop preload="none"><source src="Amr-Diab-SnapYT.App.mp3" type="audio/mpeg"></audio>
 <div class="toast" id="toast" role="status"></div>
-
+ 
 <div id="intro">
   <p class="for gold">for you</p>
   <button class="env" id="env" aria-label="افتحي الرسالة">
@@ -145,7 +145,7 @@ input[type=range]{flex:1;height:4px;accent-color:var(--gold);direction:ltr;curso
   </button>
   <p class="hint">اضغطي وافتحي الرسالة ✨</p>
 </div>
-
+ 
 <div id="main">
   <section class="hero">
     <span class="pill">mody &amp; saloma</span>
@@ -161,42 +161,42 @@ input[type=range]{flex:1;height:4px;accent-color:var(--gold);direction:ltr;curso
     <p class="since" style="opacity:.95;font-size:13px">وكل ثانية بتمر وأنتي معايا بحبك أكتر ❤️</p>
     <a class="down" href="#song" aria-label="كمّلي"><i class="fa-solid fa-chevron-down"></i></a>
   </section>
-
+ 
   <section class="vinyl" id="song">
     <div class="rec" aria-hidden="true"></div>
     <div class="vt">اكتر اغنيه بنحبها<small id="time">0:00 / 0:00</small></div>
     <div class="ctl"><button class="pb" id="pb" aria-label="تشغيل / إيقاف"><i class="fa-solid fa-play" id="pi"></i></button><input type="range" id="seek" value="0" min="0" max="100" aria-label="موضع الأغنية"></div>
   </section>
-
+ 
   <section>
     <div class="quote"><p>لو رجع بيا الزمن مليار مره كنت هختارك بردو</p><small>— for saloma</small></div>
     <div class="ltr">
       <h3 class="gold">كلام من قلبي ليكي 💘</h3>
-<p>معرفش اقول عليه ايه بس المسدج دي ب مناسبه ١١.١١ معرفش الناس بتقول يوم مميز بس اي يوم بالنسبه لي انتي فيه هيبقي مميز المهم ان النهارده بقالي ٩٢ يوم قايل لك بحبك</p>
-        <p>خلينا نتكلم عن القرار نفسه بجد يا سلمى ده اكتر قرار صح ف حياتي اني قلت لك مندمنش لو ١٪؜ بجد مندمتش خالص خالص علي اختياري ليكي مندمتش علي اي حاجه لاني معاكي ملكه و اخترت ملكه لو لفيت الدنيا كلها مش هلاقي زيها علشان هي اكتر حد حينين شفته ف حياتي اكتر حد طيب و جميل و تحفه شفته ف حياتي اكتر حد مظبوط زي م الكتاب بيقول واخد من كل حاجه بجد انتي تحفه ما شاء الله و لو رجع بيا الزمن مليار مره كنت هختارك بردو علشان انتي ما شاء الله حد كويس جدا جدا و كامل ممكن في شويه حاجات صغيره بس كلها حاجات بسطه بقالنا ٩٢ يوم بردو بنبعت ل بعض كل يوم مسدج طوييييله كلها كلام تحفه بنحب ف بعض و بنقول كل الكلام اللي ف قلبنا بنوصف قد ايه احنا بنحب بعض معن بردو معرفتش اوصف اوصف قد ايه انا بحبك علشان حبي ليكي اكبر ب كتير اوي اوي من كلام يتقال بس بحاول اوصف شويه من اللي ف قلبي ليكي حاسس عايز اتكلم كتير و اقول كتير بس مش عارف ف هقول كلام كتير مش مترتب</p>
-        <p>اما عن بعدنا دلوقتي ف هو شي صعب اوي اوي يا سلمى صعب جدا واجع قلبي اوي اوي علي طول يا سلمى افتكر احنا زمان ايامنا مع بعض دلعك عليا حبك فيا بوسه قبل م انام نكشك و لما بتتقمصي و اصالح و ادلع فيكي و لما بنتشارك كل حاجه مع بعض و لسه لما يجي يوم الاربع هقعد اعيط و افتكر لما كنت بشوفك و اشوف عيونك و نقعد نتكلم ف اي حاجه و نهزر و نضحك و نقعد نعمل حجات كتير ملهاش معنى بس انا بنبقي مبسوطين و لما بننزل يوم الخميس و نقعد الي السلم و نقعد نتكلم و نضحك و اقعد جنبك و اشوف ملمحك الحلوه التحفه دي و نقعد نحب ف بعض و منبقاش عايزين نمشي دلوقتي احنا مش هنشوف بعض لوحدنا اصلا علشان نمشي بجد حاجه توجع القلب و تزعل بس مش مهم كل ده و قصاد كل ده احنا هنبقي مع بعض بعدين و مش هحلك وقتها و هبقي مكنهم و اتباس ف الفرح و كل حاجه بقي</p>
-        <p>و الحاجه الوحيده اللي شاف ان بعدنا ده حاليا ليه فايده ان انتي هتركزي اكتر ف حاجات كتير اوي زي ايسف و اتحاد الطلاب و المذاكره هتركزي ف حاجات كتير اوي اوي عايزك يا سلمى تخدي ده فرصه و متفكريش فيا خالص ركزي بس ف مستقبل و ف حياتك و ركزي انك ديما تبقي الاحسن و ف تحسن ديما تحس ملحوظ ديما تبقي مميزه و انتي كده كده هتفضلي ف عيوني احلي و اميز بنوته ف الدنيا كلها بس عايزك تبقي متألقه ديما و شطوره</p>
-        <p>و كده بقي عملت ايه ف يومي النهارده ولا اي حاجه نزلت جبت حاجات من اخر الشارع و ذاكرت و يومي كله تيك توك او بفكر فيكي حرفيا مش بعمل حاجه غير اني بفكر فيكي عملتي فيا ايه بقي علشان ابقي كده مجنون بيكي حرفيا انتي جنان</p>
-        <p>عايزك ف الاخر تعرفي ان انتي اغلي شخص علي قلبي و الشخص الوحيد اللي قلبي حبه و الشخص الوحيد اللي لو مفريف و مش طايق الدنيا كلها هيبقي هو الشخص الوحيد اللي هيبقي عايز اقعد معاه البنت الوحده اللي حبتها و مش هحب غيرها و البنت الوحده اللي هفضل شايفها مميزه ديما بحبك اوي اوي يا نور عيني ❣️💘🌎</p>
+      <p>معرفش اقول ايه بس المسدج دي ب مناسبه ١١.١١ معرفش الناس بتقول يوم مميز بس اي يوم بالنسبه لي انتي فيه هيبقي مميز المهم ان النهارده بقالي ٩٣ يوم قايل لك بحبك</p>
+      <p>خلينا نتكلم عن القرار نفسه بجد يا سلمى ده اكتر قرار صح ف حياتي اني قلت لك مندمنش لو ١٪؜ بجد مندمتش خالص خالص علي اختياري ليكي مندمتش علي اي حاجه لاني معايا ملكه و اخترت ملكه لو لفيت الدنيا كلها مش هلاقي زيها علشان هي اكتر حد حينين شفته ف حياتي اكتر حد طيب و جميل و تحفه شفته ف حياتي اكتر حد مظبوط زي م الكتاب بيقول واخد من كل حاجه بجد انتي تحفه ما شاء الله و لو رجع بيا الزمن مليار مره كنت هختارك بردو علشان انتي ما شاء الله حد كويس جدا جدا و كامل ممكن في شويه حاجات صغيره بس كلها حاجات بسطه بقالنا ٩٣ يوم بردو بنبعت ل بعض كل يوم مسدج طوييييله كلها كلام تحفه بنحب ف بعض و بنقول كل الكلام اللي ف قلبنا بنوصف قد ايه احنا بنحب بعض معن بردو معرفتش اوصف قد ايه انا بحبك علشان حبي ليكي اكبر ب كتير اوي اوي من كلام يتقال بس بحاول اوصف شويه من اللي ف قلبي ليكي حاسس عايز اتكلم كتير و اقول كتير بس مش عارف ف هقول كلام كتير مش مترتب</p>
+      <p>اما عن بعدنا دلوقتي ف هو شي صعب اوي اوي يا سلمى صعب جدا واجع قلبي اوي اوي علي طول يا سلمى افتكر احنا زمان ايامنا مع بعض دلعك عليا حبك فيا بوسه قبل م انام نكشك و لما بتتقمصي و اصالح و ادلع فيكي و لما بنتشارك كل حاجه مع بعض و لسه لما يجي يوم الاربع هقعد اعيط و افتكر لما كنت بشوفك و اشوف عيونك و نقعد نتكلم ف اي حاجه و نهزر و نضحك و نقعد نعمل حجات كتير ملهاش معنى بس احنا بنبقي مبسوطين (جي من المستقبل علشان كاتبها يوم التلات و بقول الحمد لله شفت عيونك الحلوين دول بس لو من غير لينسزز يبقي احلي ب كتييير و كنت فرحان اوي اوي) و لما بننزل يوم الخميس و نقعد الي السلم و نقعد نتكلم و نضحك و اقعد جنبك و اشوف ملمحك الحلوه التحفه دي و نقعد نحب ف بعض و منبقاش عايزين نمشي دلوقتي احنا مش هنشوف بعض لوحدنا اصلا علشان نمشي بجد حاجه توجع القلب و تزعل (جي من المستقبل بردو و بقول اني شفتك النهارده و قعت معاكي و كنت فرحان اوي اوي) بس مش مهم كل ده و قصاد كل ده احنا هنبقي مع بعض بعدين و مش هحلك وقتها و هبقي مكنهم و اتباس ف الفرح و كل حاجه بقي</p>
+      <p>و الحاجه الوحيده اللي شايف ان بعدنا ده حاليا ليه فايده ان انتي هتركزي اكتر ف حاجات كتير اوي زي ايسف و اتحاد الطلاب و المذاكره هتركزي ف حاجات كتير اوي اوي عايزك يا سلمى تخدي ده فرصه و متفكريش فيا خالص ركزي بس ف مستقبل و ف حياتك و ركزي انك ديما تبقي الاحسن و ف تحسن ديما تحس ملحوظ ديما تبقي مميزه و انتي كده كده هتفضلي ف عيوني احلي و اميز بنوته ف الدنيا كلها بس عايزك تبقي متألقه ديما و شطوره</p>
+      <p>و كده بقي عملت ايه ف يومي النهارده كان يوم حلووووو اوي بجد خت الدرس الساعه ١٢ خلصت و قعدت علي التيك توك و بعدها نزلت رحت من الساعه ٤ و نص ل ٥ و نص ف المكان اللي بنقعد فيه و بعدها روحت انتي بعتي لي جيت لك شكلك كان حلو اوي اوي اوي يا سلمى بس عيونك من غير لينسسز احلي ب كتير اوي اوي يا سلومتي انتي جميله من غير اي حاجه ملهاش لازمه لينسسز خالص و روحت مش بعمل حاجه قاعد بفكر فيكي عملتي فيا ايه بقي علشان ابقي كده مجنون بيكي حرفيا انتي جنان</p>
+      <p>عايزك ف الاخر تعرفي ان انتي اغلي شخص علي قلبي و الشخص الوحيد اللي قلبي حبه و الشخص الوحيد اللي لو مفريف و مش طايق الدنيا كلها هيبقي هو الشخص الوحيد اللي هيبقي عايز اقعد معاه البنت الوحده اللي حبتها و مش هحب غيرها و البنت الوحده اللي هفضل شايفها مميزه ديما بحبك اوي اوي يا نور عيني ❣️💘🌎</p>
     </div>
   </section>
-
+ 
   <div class="gal-h"><h3 class="gold">our memories</h3><p>اسحبي عشان تشوفي ذكرياتنا</p></div>
   <div class="rail" id="rail"></div>
-
+ 
   <section class="tl">
     <h3 class="gold">our special days</h3>
     <div class="ev"><h4>يوم دريم بارك</h4><p>كان يوم تحفه علشان اول مره تغني لي و كنت معاكي اليوم كله بجد كان تحفه</p></div>
     <div class="ev r"><h4>i love you forever &amp; always ❤️</h4></div>
   </section>
-
+ 
   <div class="end">
     <div class="bigheart"><i class="fa-solid fa-heart"></i></div>
     <h2 class="gold">Forever &amp; Together</h2>
     <button class="again" id="again"><i class="fa-solid fa-rotate-right"></i> إعادتها من الأول</button>
   </div>
 </div>
-
+ 
 <script>
 const $=i=>document.getElementById(i), start=new Date('2026-08-10T01:00:00');
 const photos=[
@@ -207,14 +207,14 @@ const photos=[
  {src:"5.jpeg",cap:"صوره لظلنا ❤️"}
 ];
 const toast=t=>{const e=$('toast');e.textContent=t;e.classList.add('on');setTimeout(()=>e.classList.remove('on'),2800)};
-
+ 
 /* stars */
 for(let i=0;i<46;i++){const s=document.createElement('i');s.className='st';s.style.cssText=`left:${Math.random()*100}%;top:${Math.random()*100}%;animation-delay:${-Math.random()*3}s;animation-duration:${2+Math.random()*3}s;transform:scale(${.5+Math.random()})`;$('sky').appendChild(s)}
-
+ 
 /* hearts burst + tap sparkle */
 function burst(x,y,n=1){for(let i=0;i<n;i++){const h=document.createElement('span');h.className='fh';h.textContent=['❤️','💗','✨','💘'][Math.random()*4|0];h.style.left=x+'px';h.style.top=y+'px';h.style.setProperty('--x',(Math.random()*200-100)+'px');h.style.setProperty('--r',(Math.random()*80-40)+'deg');document.body.appendChild(h);setTimeout(()=>h.remove(),1500)}}
 document.addEventListener('pointerdown',e=>{if(!e.target.closest('input'))burst(e.clientX,e.clientY,1)});
-
+ 
 /* envelope */
 $('env').onclick=()=>{
   const r=$('env').getBoundingClientRect();
@@ -224,7 +224,7 @@ $('env').onclick=()=>{
   play();
 };
 $('again').onclick=()=>{$('main').classList.remove('show');setTimeout(()=>{$('main').style.display='none';$('env').classList.remove('open');$('intro').classList.remove('out');window.scrollTo(0,0)},900)};
-
+ 
 /* audio */
 const au=$('au');
 const play=()=>au.play().catch(()=>toast('اضغطي زر التشغيل عشان الأغنية تشتغل 🎵'));
@@ -235,13 +235,13 @@ au.addEventListener('error',()=>toast('ملف الأغنية مش لاقيه —
 const fmt=s=>`${Math.floor(s/60)}:${String(Math.floor(s%60)).padStart(2,'0')}`;
 au.ontimeupdate=()=>{if(!au.duration)return;$('seek').value=au.currentTime/au.duration*100;$('time').textContent=`${fmt(au.currentTime)} / ${fmt(au.duration)}`};
 $('seek').oninput=e=>{if(au.duration)au.currentTime=e.target.value/100*au.duration};
-
+ 
 /* counter */
 function tick(){const d=Math.max(0,Date.now()-start),p=n=>String(n).padStart(2,'0'),sec=Math.floor(d/1e3)%60;
  $('d').textContent=Math.floor(d/864e5);$('h').textContent=p(Math.floor(d/36e5)%24);$('m').textContent=p(Math.floor(d/6e4)%60);$('s').textContent=p(sec);
  $('pr').style.strokeDashoffset=565*(1-(sec+1)/60)}
 setInterval(tick,1000);tick();
-
+ 
 /* gallery + reveal */
 function build(){
   $('rail').innerHTML=photos.map((p,i)=>`<div class="pol"><img src="${p.src}" alt="${p.cap}" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/400x400/2a0912/fff6e3?text=%E2%9D%A4'"><span>${p.cap}</span></div>`).join('');
